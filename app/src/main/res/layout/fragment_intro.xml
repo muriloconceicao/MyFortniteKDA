@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroFragment"
+    android:background="@drawable/blue_gradient_background">
+
+
+    <TextView
+        android:id="@+id/txtYourNickLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/enter_your_nickname"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTextNickname"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtYourNickLabel"
+        app:layout_constraintStart_toStartOf="@+id/txtYourNickLabel"
+        app:layout_constraintTop_toBottomOf="@+id/txtYourNickLabel"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/custom_gradient_button"
+        android:textSize="18sp"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtTextNickname"
+        app:layout_constraintStart_toStartOf="@+id/edtTextNickname"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextNickname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Fortnite KDA</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_nickname">Digite seu nick</string>
+    <string name="hint_nickname">Ninja</string>
+    <string name="ok">OK</string>
+</resources>
